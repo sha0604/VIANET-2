@@ -144,3 +144,75 @@ padding:40px;
 text-align:center;
 font-size:13px;
 }
+/* =====================
+   HERO LIGHT ANIMATION
+===================== */
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-glow {
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background:
+  radial-gradient(
+    circle,
+    rgba(35,116,225,0.25),
+    transparent 70%
+  );
+
+
+  top:20%;
+  right:-150px;
+
+
+  animation:
+  glowMove 8s ease-in-out infinite;
+
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+@keyframes glowMove {
+
+0% {
+
+ transform:
+ translate(0,0)
+ scale(1);
+
+}
+
+
+50% {
+
+ transform:
+ translate(-80px,40px)
+ scale(1.2);
+
+}
+
+
+100% {
+
+ transform:
+ translate(0,0)
+ scale(1);
+
+}
+
+}
