@@ -216,3 +216,29 @@ font-size:13px;
 }
 
 }
+/* =====================
+   SCROLL ANIMATION
+===================== */
+
+
+.reveal {
+
+  opacity: 0;
+
+  transform:
+  translateY(40px);
+
+  transition:
+  1s ease;
+
+}
+
+
+.reveal.active {
+
+  opacity:1;
+
+  transform:
+  translateY(0);
+
+}
