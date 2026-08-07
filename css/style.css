@@ -566,29 +566,18 @@ transform:translateY(-80px);
   transition:0.5s ease;
 
 }
+document.addEventListener("DOMContentLoaded", () => {
 
+  const menuBtn = document.querySelector(".menu-btn");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-.mobile-menu.active {
+  if (!menuBtn || !mobileMenu) return;
 
-  transform:translateX(0);
+  menuBtn.addEventListener("click", () => {
 
-}
-.menu-btn.active span:nth-child(1){
+    menuBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
- transform:translateY(8px) rotate(45deg);
+  });
 
-}
-
-
-.menu-btn.active span:nth-child(2){
-
- opacity:0;
-
-}
-
-
-.menu-btn.active span:nth-child(3){
-
- transform:translateY(-8px) rotate(-45deg);
-
-}
+});
