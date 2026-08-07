@@ -16,16 +16,17 @@ window.addEventListener("scroll", () => {
   });
 
 });
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
   const menuBtn = document.querySelector(".menu-btn");
   const mobileMenu = document.querySelector(".mobile-menu");
 
+  if (!menuBtn || !mobileMenu) return;
 
-  menuBtn.addEventListener("click",()=>{
+  menuBtn.addEventListener("click", () => {
 
-    mobileMenu.classList.toggle("active");
     menuBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
   });
 
