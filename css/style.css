@@ -569,3 +569,22 @@ transform:translateY(-80px);
   transform:translateX(0);
 
 }
+.menu-btn.active span:nth-child(1){
+
+ transform:translateY(8px) rotate(45deg);
+
+}
+
+
+.menu-btn.active span:nth-child(2){
+
+ opacity:0;
+
+}
+
+
+.menu-btn.active span:nth-child(3){
+
+ transform:translateY(-8px) rotate(-45deg);
+
+}
