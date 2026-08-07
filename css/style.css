@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+font-family:
+“Noto Sans JP”,
+sans-serif;
+color: #0b1b33;
+background: #ffffff;
+line-height: 1.8;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.header {
+width: 100%;
+padding: 28px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: absolute;
+top: 0;
+z-index: 10;
+}
+
+.logo {
+font-size: 28px;
+font-weight: 800;
+letter-spacing: 0.12em;
+}
+
+.header nav {
+display: flex;
+gap: 35px;
+font-size: 14px;
+letter-spacing: 0.1em;
+}
+
+.hero {
+min-height: 100vh;
+display: flex;
+align-items: center;
+padding: 0 8%;
+background:
+linear-gradient(
+135deg,
+#ffffff 0%,
+#eef6ff 100%
+);
+}
+
+.hero-sub {
+font-size: 14px;
+letter-spacing: .25em;
+color: #2374e1;
+margin-bottom: 30px;
+}
+
+.hero h1 {
+font-size: clamp(42px,6vw,82px);
+line-height: 1.25;
+margin-bottom: 30px;
+}
+
+.hero p {
+font-size: 18px;
+}
+
+.btn {
+display: inline-block;
+margin-top: 40px;
+padding: 15px 45px;
+border-radius: 50px;
+background: #0b1b33;
+color: white;
+letter-spacing: .15em;
+}
+
+section {
+padding: 120px 8%;
+}
+
+.section-title span {
+color:#2374e1;
+letter-spacing:.3em;
+font-size:13px;
+}
+
+.section-title h2 {
+font-size:42px;
+margin-top:15px;
+}
+
+.message-text {
+margin-top:60px;
+font-size:20px;
+}
+
+.message-text p {
+margin-bottom:35px;
+}
+
+.cards {
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:60px;
+}
+
+.card {
+padding:40px;
+border:1px solid #e5eaf0;
+border-radius:20px;
+}
+
+.card h3 {
+font-size:18px;
+margin-bottom:20px;
+}
+
+.vision {
+background:#0b1b33;
+color:white;
+text-align:center;
+}
+
+.vision h2 {
+font-size:48px;
+margin-bottom:30px;
+}
+
+.contact-area {
+text-align:center;
+}
+
+footer {
+padding:40px;
+text-align:center;
+font-size:13px;
+}
