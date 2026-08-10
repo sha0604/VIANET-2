@@ -8,9 +8,7 @@ window.addEventListener("scroll", () => {
     const elementTop = element.getBoundingClientRect().top;
 
     if (elementTop < windowHeight - 100) {
-
       element.classList.add("active");
-
     }
 
   });
@@ -22,20 +20,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const menuBtn = document.querySelector(".menu-btn");
   const mobileMenu = document.querySelector(".mobile-menu");
+  const menuClose = document.querySelector(".menu-close");
 
-  if (!menuBtn || !mobileMenu) return;
-const menuClose = document.querySelector(".menu-close");
+  if (!menuBtn || !mobileMenu || !menuClose) return;
 
-menuBtn.addEventListener("click", () => {
+  menuBtn.addEventListener("click", () => {
 
-  menuBtn.classList.add("active");
-  mobileMenu.classList.add("active");
+    menuBtn.classList.add("active");
+    mobileMenu.classList.add("active");
 
-});
+  });
 
-menuClose.addEventListener("click", () => {
+  menuClose.addEventListener("click", () => {
 
-  menuBtn.classList.remove("active");
-  mobileMenu.classList.remove("active");
+    menuBtn.classList.remove("active");
+    mobileMenu.classList.remove("active");
+
+  });
 
 });
