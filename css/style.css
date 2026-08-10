@@ -566,7 +566,6 @@ transform:translateY(-80px);
   transition:0.5s ease;
 
 }
-document.addEventListener("DOMContentLoaded", () => {
 
   const menuBtn = document.querySelector(".menu-btn");
   const mobileMenu = document.querySelector(".mobile-menu");
