@@ -24,12 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileMenu = document.querySelector(".mobile-menu");
 
   if (!menuBtn || !mobileMenu) return;
+const menuClose = document.querySelector(".menu-close");
 
-  menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
 
-    menuBtn.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
+  menuBtn.classList.add("active");
+  mobileMenu.classList.add("active");
 
-  });
+});
+
+menuClose.addEventListener("click", () => {
+
+  menuBtn.classList.remove("active");
+  mobileMenu.classList.remove("active");
 
 });
