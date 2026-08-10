@@ -14,27 +14,17 @@ window.addEventListener("scroll", () => {
   });
 
 });
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const menuBtn = document.querySelector(".menu-btn");
   const mobileMenu = document.querySelector(".mobile-menu");
-  const menuClose = document.querySelector(".menu-close");
 
-  if (!menuBtn || !mobileMenu || !menuClose) return;
+  if (!menuBtn || !mobileMenu) return;
 
   menuBtn.addEventListener("click", () => {
 
-    menuBtn.classList.add("active");
-    mobileMenu.classList.add("active");
-
-  });
-
-  menuClose.addEventListener("click", () => {
-
-    menuBtn.classList.remove("active");
-    mobileMenu.classList.remove("active");
+    menuBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
   });
 
