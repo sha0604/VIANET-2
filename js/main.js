@@ -16,6 +16,8 @@ window.addEventListener("scroll", () => {
   });
 
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const menuBtn = document.querySelector(".menu-btn");
@@ -29,5 +31,3 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.classList.toggle("active");
 
   });
-
-});
